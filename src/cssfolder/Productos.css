@@ -4,17 +4,20 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0;
+    background-color: #f6f6f6;
 }
 
 
 
 .shirts-container .Pro-Container {
-    width: 80%;
+    width: 100%;
     /* min-height: 100vh; */
-    margin-top: 30px;
+    margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: white;
+    border-top: 1px solid gainsboro;
 }
 
 .Pro-Container  .no-results{
@@ -35,14 +38,14 @@
     width: 240px;
     height: 330px;
     padding: 10px 12px;
-    border: 1px solid #c7ffcf;
+    border: none;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03); */
     margin: 15px 0;
     transition: 0.3s ease;
     position: relative;
-    background-color: #e5ffe5;
+    background-color: #e5ffe500;
 }
 
 .shirts-container .pro:hover {
@@ -58,8 +61,11 @@
 
 .shirts-container .pro .des {
     width: 100%;
-    text-align: start;
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .shirts-container .pro .des span {
@@ -71,13 +77,15 @@
 .shirts-container .pro .des p {
     color: #606063;
     font-size: 11px;
-    margin: 0;
+    margin: 0 30px;
+    text-align: center;
 }
 
 .shirts-container .pro .des h5 {
-    margin: 10px 0 5px 0;
-    color: #1a1a1a;
+    margin: 3px 0 5px 0;
+    color: #262626;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .shirts-container .pro .des .star img {
@@ -87,12 +95,12 @@
 
 .shirts-container .pro .des h4 {
     /* margin: 0; */
-    font-size: 15px;
-    font-weight: 700;
-    color: #088178;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff2525;
     position: absolute;
-    bottom: 0px;
-    left: 13px;
+    bottom: 0;
+    left: 119px;
 }
 
 
@@ -119,7 +127,7 @@
 .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 40px 0 40px 0;
     width: 30%;
     list-style: none;
     padding: 0;
@@ -141,7 +149,8 @@
 }
 
 .pagination li.active {
-    background-color: darkorange;
+    background-color: rgb(0, 0, 0);
+    color: white;
     padding: 5px 10px;
     border-radius: 10px;
 }
@@ -176,6 +185,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0;
+
     }
 
     .shirts-container .Pro-Container {
@@ -221,6 +231,7 @@
 
     .shirts-container .pro .des p {
         font-size: 10px;
+        margin: 0;
     }
 
     .shirts-container .pro .des span {
@@ -228,18 +239,19 @@
     }
 
     .shirts-container .pro .des h5 {
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 500;
         /* letter-spacing: 0.8px; */
         margin: 5px 0 4px 0;
+        text-transform: uppercase;
     }
 
     .shirts-container .pro .des h4 {
         margin: 10px 0 0 6px;
-        font-size: 16px;
+        font-size: 14px;
         position: absolute;
-        bottom: 6px;
-        left: 7px;
+        bottom: 12px;
+        left: 10px;
     }
 
     div .star {
@@ -255,7 +267,6 @@
 
     .pagination {
         width: 100%;
-        margin-bottom: 0;
     }
 }
 

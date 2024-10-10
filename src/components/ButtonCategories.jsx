@@ -25,17 +25,17 @@ const ButtonCategories = ({ setFilter }) => {
                     {/* <img src={lagerImage} alt="Lager" /> */}
                     <p>Mostrar Todos</p>
                 </div>
-                <div className="category-item" onClick={() => setFilter('comida')}>
+                <div className="category-item" onClick={() => setFilter('proteina')}>
                     {/* <img src={tequilaImage} alt="Tequila" /> */}
-                    <p>Menu del Dia</p>
+                    <p>Proteina</p>
                 </div>
-                <div className="category-item" onClick={() => setFilter('bebida')}>
+                <div className="category-item" onClick={() => setFilter('creatina')}>
                     {/* <img src={whiteWineImage} alt="White Wine" /> */}
-                    <p>Bebidas</p>
+                    <p>Creatina</p>
                 </div>
-                <div className="category-item" onClick={() => setFilter('postre')}>
+                <div className="category-item" onClick={() => setFilter('suplemento')}>
                     {/* <img src={aleImage} alt="Ale" /> */}
-                    <p>Postres</p>
+                    <p>Suplementos</p>
                 </div>
                 {/* <div className="category-item" onClick={() => setFilter('Mecatos')}>
                     <img src={redWineImage} alt="Mecatos" />

@@ -3,7 +3,7 @@ import { CartContext } from '../Context/CartContext';
 import "../cssfolder/Header.css";
 import cartIcon from "../icons/shopping.svg";
 import admin from "../icons/admin.svg";
-import logo from "../icons/logokamus.webp"; // Asegúrate de importar el logo
+import logo from "../icons/gymicon.webp"; // Asegúrate de importar el logo
 import whatsappIcon from "../icons/WhatsApp.png.webp"; // Asegúrate de importar el icono de WhatsApp
 import Cart from './Cart';
 import { Link } from 'react-router-dom';
@@ -38,7 +38,7 @@ const Header = () => {
 
             <div className='buttonCartContainer'>
                 <button className='cta-button'>
-                    <p>Contáctanos</p>
+                    <p className='cta-button-p'>Contáctanos</p>
                     <Link to="https://wa.link/326hs0" ><img src={whatsappIcon} alt="WhatsApp Logo" className='whatsapp-logo' /></Link>
                 </button>
                 {/* <div className='buttonCart buttonCart-left'>

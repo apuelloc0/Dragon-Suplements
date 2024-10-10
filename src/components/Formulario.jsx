@@ -19,9 +19,9 @@ const Formulario = () => {
         e.preventDefault();
 
         const datosUsuario = { nombre, apellido, numero, metodoPago, ubicacion, entrega };
-        const numeroTelefonico = "584241774147";
+        const numeroTelefonico = "584149836224";
         // Crear mensaje con los productos
-        const mensaje = `Hola Kamus, me gustaría realizar el siguiente pedido: 
+        const mensaje = `Hola Dragon Suplements, me gustaría realizar el siguiente pedido: 
         \n- ${cartItems.map((producto) => `${producto.name} - $${producto.price} - Cantidad: ${producto.amount}`).join(', ')}. 
         \n Mis datos son los siguientes: \n- Nombre: ${datosUsuario.nombre} \n- Apellido: ${datosUsuario.apellido} \n- Numero de Cliente: ${datosUsuario.numero} \n- Método de Pago: ${datosUsuario.metodoPago} \n- Entrega: ${datosUsuario.entrega} \n- Ubicación: ${datosUsuario.ubicacion}`;
 
@@ -110,7 +110,7 @@ const Formulario = () => {
                     <p>Sus datos personales se utilizarán unicamente para procesar su pedido y respaldar su experiencia en este sitio web.</p>
                 </div>
                 <div className='Button-wha'>
-                    <button className='Send-wha' type="submit">Enviar a Whatsapp</button>
+                    <button className='Send-wha' type="submit">Finalizar Pedido</button>
 
                 </div>
             </form>

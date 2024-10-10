@@ -1,6 +1,6 @@
 import React from 'react'
 import "../cssfolder/Footer.css";
-import logo from "../icons/logokamus.webp"; // Asegúrate de importar el logo
+import logo from "../icons/gymicon.webp"; // Asegúrate de importar el logo
 import { Link } from 'react-router-dom';
 import instagram from "../icons/instaicon.svg";
 import facebook from "../icons/facebook.svg";
@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="Footer-Contact">
                     <span>Contacto</span>
                     <span>300-6624419</span>
-                    <span>@menu_kamus</span>
+                    <span>@dragon_suplements</span>
 
                 </div>
                 {/* <div className="Footer-Pay">
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div> */}
             </div>
             <div className="Footer-bottom">
-                <p>© 2024 Kamus C.A - Puerto la Cruz</p>
+                <p>© 2024 Dragon Suplements C.A - New York</p>
             </div>
         </div>
     )

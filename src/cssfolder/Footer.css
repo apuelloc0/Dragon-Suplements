@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .Footer-top {
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #e3fbe3;
+    background-color: #ededed;
 }
 
 .Footer-top div {
@@ -45,8 +45,8 @@
 }
 
 .Footer-logo img {
-    width: 180px;
-    height: 160px;
+    width: 90px;
+    height: 75px;
 }
 
 .Footer-categories,
@@ -75,21 +75,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e3fbe3;
+    background-color: #000000;
 }
 
 .Footer-bottom p {
     margin: 0;
     font-size: 12px;
     font-weight: 600;
-    color: #034f09;
+    color: #ffffff;
 }
 
 @media (max-width: 600px) {
     .Footer {
         height: 350px;
-        margin: 10px 0 0 0;
-        border: none;
+        margin: 0;
+        border: 1px solid gainsboro;
     }
 
     .Footer-top {

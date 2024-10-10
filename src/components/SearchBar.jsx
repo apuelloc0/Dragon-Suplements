@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import lupa from '../icons/lupaicon.svg';
 import "../cssfolder/SearchBar.css";
 
 const SearchBar = ({ setFilter }) => {
@@ -20,7 +20,9 @@ const SearchBar = ({ setFilter }) => {
                 value={searchTerm}
                 onChange={handleSearch}
             />
-            <button type="submit" onClick={() => setFilter(searchTerm.toLowerCase())}>Buscar</button>
+            <button type="submit" onClick={() => setFilter(searchTerm.toLowerCase())}>
+                <img className='lupa-icon' src={lupa} alt="lupa" />
+            </button>
         </div>
     );
 };

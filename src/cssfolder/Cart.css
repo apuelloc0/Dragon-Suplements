@@ -40,7 +40,7 @@ body.modal-open {
     /* Ajusta este valor para que se deslice fuera de la vista */
     width: 400px;
     height: 100vh;
-    background-color: #e3fbe3eb;
+    background-color: #0f0f0feb;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease-in-out;
     z-index: 1000;
@@ -74,7 +74,7 @@ body.modal-open {
 .cart .Title-cart {
     text-align: left;
     margin: 20px 0 0px 25px;
-    color: black;
+    color: #d4d4d4;
 }
 
 .cart h2 {
@@ -89,7 +89,7 @@ body.modal-open {
 .cart-vacio {
     text-align: center;
     margin-top: 5px;
-    font-size: 14p
+    color: #9f9f9f;
 }
 
 .Ordering {
@@ -117,7 +117,7 @@ body.modal-open {
     color: black;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    background-color: #c8ffc8;
+    background-color: #a9a9a9;
     border-radius: 10px;
     transition: ease-in 0.2s;
 }
@@ -166,7 +166,7 @@ body.modal-open {
 .Ordering-total p.cart-total {
     padding: 0 24px 0 24px;
     letter-spacing: 1px;
-    color: #148614;
+    color: #d4d4d4;
     font-size: 14px;
     font-weight: 500;
 }
@@ -247,7 +247,7 @@ div:nth-child(2) .envio-option {
     .cart {
         width: 85%;
         height: 100vh;
-        /* justify-content: flex-start; */
+        background-color: #0f0f0ff0;
     }
 
     .cart .Title-cart {
