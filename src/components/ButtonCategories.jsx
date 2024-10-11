@@ -1,10 +1,5 @@
 import React, { useRef } from 'react';
 import "../cssfolder/ButtonCategories.css";
-import lagerImage from '../icons/logocerveza2.webp';
-import tequilaImage from '../icons/logocerveza2.webp';
-import whiteWineImage from '../icons/logocerveza2.webp';
-import aleImage from '../icons/logocerveza2.webp';
-import redWineImage from '../icons/logocerveza2.webp';
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 

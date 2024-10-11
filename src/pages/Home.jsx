@@ -1,6 +1,5 @@
 import "../cssfolder/Home.css";
 import Productos from "../components/Productos";
-import logokamus from "../icons/logokamus.webp";
 
 const Home = () => {
 

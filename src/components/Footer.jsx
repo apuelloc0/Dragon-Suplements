@@ -3,7 +3,7 @@ import "../cssfolder/Footer.css";
 import logo from "../icons/gymicon.webp"; // Asegúrate de importar el logo
 import { Link } from 'react-router-dom';
 import instagram from "../icons/instaicon.svg";
-import facebook from "../icons/facebook.svg";
+import facebook from "../icons/faceboook.svg";
 
 const Footer = () => {
     return (
