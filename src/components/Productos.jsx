@@ -175,23 +175,23 @@ import ButtonCategories from './ButtonCategories';
 import SearchBar from './SearchBar';
 
 const Productos = () => {
-    const { addItemToCart } = useContext(CartContext);
-    const [filter, setFilter] = useState('');
+    const { addItemToCart, productos, loading, error } = useContext(CartContext);
+    // const [filter, setFilter] = useState('');
     const [currentPage, setCurrentPage] = useState(0);
     const [itemsPerPage] = useState(30); // Fijamos la cantidad de items por página
     const containerRef = useRef(null);
 
-    const { data, loading, error } = useSheets(
-        'AIzaSyBpHDI9OLva3Ed1ANXi27__yYzcjfm85Dg',
-        '1jjFklr_CvTKJfxZZJyIZvxRyofNdmHVTNMp1TtjPmCc',
-        'Hoja1!A2:G',
-        filter
-    );
+    // const { data, loading, error } = useSheets(
+    //     'AIzaSyBpHDI9OLva3Ed1ANXi27__yYzcjfm85Dg',
+    //     '1jjFklr_CvTKJfxZZJyIZvxRyofNdmHVTNMp1TtjPmCc',
+    //     'Hoja1!A2:G',
+    //     filter
+    // );
     // AIzaSyCSr3Z9VnT83G2q2OrxBFsXCrklxzKMGds apikey
     // 1066303412984-q41khul37v8i8heoi4mtg03dpe4i0i29.apps.googleusercontent.com keyOAUTH
 
 
-    const productosConId = data ? data.map(product => ({ ...product, id: uuidv4() })) : [];
+    const productosConId = productos ? productos.map(product => ({ ...product, id: uuidv4() })) : [];
 
     const indexOfLastItem = (currentPage + 1) * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -209,15 +209,15 @@ const Productos = () => {
 
     return (
         <div className="shirts-container">
-            <ButtonCategories setFilter={setFilter} />
-            <SearchBar setFilter={setFilter} />
+            <ButtonCategories />
+            <SearchBar />
 
             <div ref={containerRef} className="Pro-Container">
                 {
                     loading ? <Loading /> : currentItems.length === 0 ? (<p className='no-results'>Sin resultados...</p>) :
                     currentItems.map((product, i) => 
                     
-                        <Link key={i} to={`/${i}`}>
+                        <Link key={i} to={`/${i+1}`}>
 
                        <div key={i} className="pro">
                            <img src={product.img} alt={product.name} />

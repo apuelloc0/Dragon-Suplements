@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import lupa from '../icons/lupaicon.svg';
 import "../cssfolder/SearchBar.css";
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
 
-const SearchBar = ({ setFilter }) => {
+const SearchBar = () => {
+
+    const { setFilter } = useContext(CartContext);
+
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSearch = (event) => {

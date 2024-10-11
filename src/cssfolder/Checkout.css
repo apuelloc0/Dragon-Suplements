@@ -6,7 +6,9 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
-    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/gymwoman.webp");
+    background-size: cover;
+    background-position: center;
 }
 
 .banner-Checkout {
@@ -25,7 +27,7 @@
 }
 
 .Checkout-selection button {
-    background-color: white;
+    background-color: #ffffff1c;
     border: none;
     color: #848484;
     padding: 15px 32px;
@@ -61,13 +63,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 100px;
+    top: 116px;
     left: 20px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f438;
     border: none;
+    border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -81,7 +84,7 @@
     width: 35%;
     max-height: 620px;
     padding: 15px;
-    background-color: #616161;
+    background-color: #6161616e;
     border: none;
     border-radius: 10px;
     display: flex;
@@ -163,7 +166,7 @@
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #ffffff3d;
     padding: 10px 0 10px 6px;
     border-radius: 10px;
     text-align: center;
@@ -174,7 +177,7 @@
 .cartItem-Checkout {
     width: 100%;
     display: flex;
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e940;
     padding: 5px 0 5px 0;
 }
 
@@ -183,6 +186,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .Checkout-items .Checkout-items-left {
     width: 65%;
@@ -199,7 +204,7 @@
 }
 
 .Checkout-items-left p {
-    color: #4e4e4e;
+    color: #ffffff;
     font-size: 13px;
     font-weight: 400;
 }
@@ -213,7 +218,7 @@
  .Checkout-items-right .right-container {
     font-size: 13px;
     font-weight: 600;
-    color: #465b52;
+    color: #ffffff;
     padding-top: 3px;
     display: flex;
     flex-direction: column;
@@ -225,7 +230,7 @@
     font-size: 13px;
     font-weight: 400;
     margin: 0;
-    color: #4e4e4e;
+    color: #ffffff;
 }
 
 div:nth-child(2) .envio-p {
@@ -281,7 +286,8 @@ div:nth-child(2) .envio-option {
 @media (max-width: 600px) {
     .Checkout {
         width: 100%;
-        margin-top: 110px;
+        margin-top: 90px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/gymwoman2.webp");
     }
 
     .Checkout-selection {
@@ -306,7 +312,7 @@ div:nth-child(2) .envio-option {
         width: 40px;
         height: 40px;
         top: 101px;
-        left: 24px;
+        left: 16px;
         font-size: 45px;
     }
 
@@ -314,7 +320,7 @@ div:nth-child(2) .envio-option {
         width: 80%;
         height: 600px;
         padding: 20px;
-        margin-top: 40px;
+        margin-top: 65px;
         display: flex;
         /* justify-content: flex-start; */
         align-items: center;
@@ -328,6 +334,11 @@ div:nth-child(2) .envio-option {
         width: 100%;
         min-height: 60%;
         padding: 8px;
+        background-color: #ffffff38;
+    }
+
+    .cartItem-Checkout{
+        border-bottom: 1px solid #e9e9e959;
     }
 
     .Checkout-items-right {
@@ -336,6 +347,15 @@ div:nth-child(2) .envio-option {
 
     .Checkout-items-right .right-container {
         width: 38px;
+        color: #ffffff;
+    }
+
+    .Checkout-items-right .right-container p{
+        color: #ffffff;
+    }
+
+    .Checkout-items-left p{
+        color: #ffffff;
     }
 
     .Checkout-total {
@@ -387,5 +407,9 @@ div:nth-child(2) .envio-option {
 
     .Checkout-items .Checkout-items-left{
         margin-left: 0;
+    }
+
+    .envio-option .input-2 label span{
+        color: #ffa6a6;
     }
 }

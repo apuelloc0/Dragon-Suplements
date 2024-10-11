@@ -5,8 +5,13 @@ import tequilaImage from '../icons/logocerveza2.webp';
 import whiteWineImage from '../icons/logocerveza2.webp';
 import aleImage from '../icons/logocerveza2.webp';
 import redWineImage from '../icons/logocerveza2.webp';
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
 
-const ButtonCategories = ({ setFilter }) => {
+const ButtonCategories = () => {
+
+    const { setFilter } = useContext(CartContext);
+
     const containerRef = useRef(null);
 
     const scrollLeft = () => {

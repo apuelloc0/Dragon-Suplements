@@ -446,8 +446,8 @@
     .Home-hero {
         flex-direction: column;
         justify-content: center;
-        background-position: right;
         background-attachment: fixed;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/fitvertical.webp");
         height: 90vh;
     }
 
