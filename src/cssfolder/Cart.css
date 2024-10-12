@@ -66,9 +66,10 @@ body.modal-open {
 .Close-cart {
     position: absolute;
     z-index: 1001;
-    top: 20px;
+    top: 25px;
     right: 20px;
     cursor: pointer;
+    width: 20px;
 }
 
 .cart .Title-cart {

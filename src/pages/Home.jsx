@@ -3,6 +3,10 @@ import Productos from "../components/Productos";
 
 const Home = () => {
 
+    const scrollToCatalogo = () => {
+        document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+      };
+
     return (
         <div className='Home'>
 
@@ -10,7 +14,7 @@ const Home = () => {
                 <div class="slider-container">
                     <h1 className="Home-hero-h1">Los mejores suplementos a tu alcance</h1>
                     <p className="Home-hero-text">Con los mejores precios</p>
-                    <button className="Home-hero-button">Ver Catálogo</button>
+                    <button className="Home-hero-button" onClick={scrollToCatalogo}>Ver Catálogo</button>
                 </div>
             </div>
 

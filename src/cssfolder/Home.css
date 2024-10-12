@@ -1,6 +1,6 @@
 .Home {
     max-width: 100%;
-    margin-top: 95px;
+    padding-top: 95px;
 }
 
 .Home-hero {
@@ -440,7 +440,7 @@
 
 @media (max-width: 600px) {
     .Home {
-        margin-top: 80px;
+        padding-top: 80px;
     }
 
     .Home-hero {

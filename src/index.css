@@ -1,8 +1,20 @@
 html {
   background-color: #f4f4f4;
-
 }
 
+
+/* Eliminar el resaltado azul en todos los elementos */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Evitar el sombreado del texto en todos los elementos */
+* {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

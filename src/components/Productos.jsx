@@ -288,7 +288,7 @@ const Productos = () => {
     };
 
     return (
-        <div className="shirts-container">
+        <div className="shirts-container" id="catalogo">
             <ButtonCategories />
             <SearchBar />
 

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../Context/CartContext';
 import "../cssfolder/Cart.css";
-import close from "../icons/x.png";
+import close from "../icons/closeicon.svg";
 import ItemCart from './ItemCart';
 import { Link } from 'react-router-dom';
 
