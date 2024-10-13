@@ -34,7 +34,7 @@
 .Detail-product .Details {
     display: flex;
     flex-direction: column;
-
+width: 70%;
 }
 
 .Details h5 {
@@ -239,8 +239,9 @@
     }
 
     .Details p {
-        display: none;
-    }
+margin: 16px 30px 16px 30px;
+text-align: center;
+font-size: 14px;    }
 
     .Details span {
         margin: 5px;

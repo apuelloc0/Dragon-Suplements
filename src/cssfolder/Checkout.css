@@ -413,6 +413,7 @@ div:nth-child(2) .envio-option {
     }
 
     .envio-option .input-2 label span{
-        color: #ffa6a6;
+        color: #fc7070;
+        font-weight: 600;
     }
 }

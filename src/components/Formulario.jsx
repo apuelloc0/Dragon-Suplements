@@ -21,7 +21,8 @@ const Formulario = () => {
         const datosUsuario = { nombre, apellido, numero, metodoPago, ubicacion, entrega };
         const numeroTelefonico = "584149836224";
         // Crear mensaje con los productos
-        const mensaje = `Hola Dragon Suplements, me gustaría realizar el siguiente pedido: 
+        const mensaje = `Nuevo Pedido Dragon Suplements
+         \n Me gustaría realizar el siguiente pedido: 
         \n- ${cartItems.map((producto) => `${producto.name} - $${producto.price} - Cantidad: ${producto.amount}`).join(', ')}. 
         \n Mis datos son los siguientes: \n- Nombre: ${datosUsuario.nombre} \n- Apellido: ${datosUsuario.apellido} \n- Numero de Cliente: ${datosUsuario.numero} \n- Método de Pago: ${datosUsuario.metodoPago} \n- Entrega: ${datosUsuario.entrega} \n- Ubicación: ${datosUsuario.ubicacion}`;
 
