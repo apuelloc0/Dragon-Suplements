@@ -249,7 +249,7 @@
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    background-image: url("../icons/inthegym.webp");
+    /* background-image: url("../icons/inthegym.webp"); */
     width: 30%;
     height: 450px;
     /* height: 300px; */
@@ -274,7 +274,7 @@
 }
 
 .sm-banner2 .banner-box2 {
-    background-image: url("../icons/womanimg.webp");
+    /* background-image: url("../icons/womanimg.webp"); */
     background-size: cover;
     /* background-position: center; */
     width: 48%;
@@ -329,7 +329,7 @@
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    background-image: url("../icons/bannerbebida.webp");
+    /* background-image: url("../icons/bannerbebida.webp"); */
     min-width: 27%;
     height: 400px;
     background-size: cover;
@@ -338,13 +338,7 @@
     margin-top: 20px;
 }
 
-.banner3 .banner-box2 {
-    background-image: url("../icons/bannerpedido.webp");
-}
 
-.banner3 .banner-box3 {
-    background-image: url("../icons/bannerchiva.webp");
-}
 
 .banner3 h2 {
     color: #fff;
