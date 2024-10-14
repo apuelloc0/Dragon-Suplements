@@ -83,7 +83,7 @@ const Cart = ({ cartOpen, setCartOpen }) => {
                     <p className='cart-total'>Subtotal</p>
                     <p className='cart-total'>${total}</p>
                 </div>
-                <p className='p-enviar'>Nota: Para procesar tu pedido haz Click en Enviar a whatsapp</p>
+                <p className='p-enviar'>Nota: Para procesar tu pedido "haz Click" en Ir a Checkout</p>
                 <button disabled={cartItems.length === 0}>
                     <Link className={cartItems.length === 0 && "disabled-link"} to="/checkout">Ir a Checkout</Link>
                 </button>
