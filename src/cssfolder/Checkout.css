@@ -10,7 +10,12 @@
     background-size: cover;
     /* background-position: center; */
     padding: 50px 0 50px 0;
+
 }
+
+/* .Checkout.loaded {
+    opacity: 1;
+  } */
 
 .banner-Checkout {
     width: 100%;
