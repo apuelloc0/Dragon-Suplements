@@ -120,3 +120,13 @@ select {
         width: 90%;
     }
 }
+
+@media (min-width: 600px) and (max-width: 900px){
+    .form-container{
+        width: 40%
+    }
+
+    .form-text p{
+        margin: 13px 0;
+    }
+}

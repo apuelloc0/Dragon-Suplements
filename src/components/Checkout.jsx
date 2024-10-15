@@ -3,7 +3,7 @@ import "../cssfolder/Checkout.css";
 import { CartContext } from '../Context/CartContext';
 import flechaiz from "../icons/flechaiz.svg";
 import Formulario from './Formulario';
-import PSEPayment from './PSEPayment';
+// import PSEPayment from './PSEPayment';
 // import gymwoman from '../icons/gymwoman.webp';
 
 const Checkout = () => {
@@ -24,29 +24,29 @@ const Checkout = () => {
         return subtotal;
     };
 
-    const handleBackClick = () => {
-        setSelectedOption(null);
-    };
+    // const handleBackClick = () => {
+    //     setSelectedOption(null);
+    // };
 
     return (
         <div className="Checkout">
 
-             {!selectedOption && (
+             {/* {!selectedOption && (
                  <div className="Checkout-selection">
-                     {/* <button onClick={() => setSelectedOption('pse')}>Métodos de Pago</button> */}
+                     <button onClick={() => setSelectedOption('pse')}>Métodos de Pago</button>
                      <button onClick={() => setSelectedOption('whatsapp')}>Finalizar Pedido</button>
                  </div>
-             )}
+             )} */}
 
-            {selectedOption && (
+            
 
                 <div className="Checkout-info">
-                    <button className="back-button" onClick={handleBackClick}>
+                    {/* <button className="back-button" onClick={handleBackClick}>
                         <img src={flechaiz} alt="" />
-                    </button>
+                    </button> */}
 
-                    {selectedOption === 'whatsapp' && <Formulario />}
-                    {selectedOption === 'pse' && <PSEPayment total={calculateTotal} />}
+                    <Formulario />
+                    {/* {selectedOption === 'pse' && <PSEPayment total={calculateTotal} />} */}
 
                     <div className="Checkout-products">
                         <div className="Checkout-list">
@@ -115,7 +115,7 @@ const Checkout = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            
         </div>
     );
 };

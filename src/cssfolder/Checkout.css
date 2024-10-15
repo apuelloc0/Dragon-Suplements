@@ -421,3 +421,18 @@ div:nth-child(2) .envio-option {
         font-weight: 600;
     }
 }
+
+
+@media (min-width: 600px) and (max-width: 900px){
+    .Checkout-selection button{
+        width: 40%;
+    }   
+
+    .Checkout-info{
+        width: 95%;
+    }
+
+    .Checkout-products{
+        width: 46%;
+    }
+}
