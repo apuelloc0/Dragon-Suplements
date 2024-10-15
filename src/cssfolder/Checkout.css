@@ -443,7 +443,12 @@ div:nth-child(2) .envio-option {
     }
 
     .Checkout-products{
-        width: 65%;
+        width: 55%;
         min-height: 620px;
+    }
+
+    .envio-option .input-2 label span{
+        color: #fc7070;
+        /* font-weight: 600; */
     }
 }
