@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import AddToCart from './pages/AddToCart';
 import CartProvider from './Context/CartContext';
-import StoreOpenClose from './components/StoreOpenClose';
+// import StoreOpenClose from './components/StoreOpenClose';
 import Footer from './components/Footer';
 import Checkout from './components/Checkout';
 import Loader from './components/Loading';
@@ -28,7 +28,7 @@ function App() {
         <HashRouter>
         <ScrollToTop />
           <Header />
-          <StoreOpenClose />
+          {/* <StoreOpenClose /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/:id" element={<AddToCart />} />

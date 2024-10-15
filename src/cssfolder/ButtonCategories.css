@@ -138,23 +138,13 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 900px){
+ @media (min-width: 600px) and (max-width: 900px){
     .Button-category{
         overflow: hidden;
     }
 }
 
-@media (min-width: 900px) {
-    .scroll-button {
-        display: none;
-        /* Oculta las flechas en escritorio */
-    }
 
-    .Button-category {
-        overflow: visible;
-        /* Muestra todos los elementos en escritorio */
-    }
-}
 
 
 

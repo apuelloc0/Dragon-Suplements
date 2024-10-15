@@ -588,41 +588,23 @@
 
 }
 
-/* 
-@media (min-width: 600px) and (max-width: 900px)  {
-    .Home-hero {
-        background-position: center;
-        background-size: cover;
-    }
 
-    .slider-container {
-        width: 70%;
+@media (min-width: 601px) and (max-width: 900px)  {
+    .slider-container{
+        width: 55%;
     }
 
     .Home-hero-h1{
-        font-size: 43px;
-        line-height: 58px;
+        font-size: 50px;
     }
 
-    .sm-banner-container{
-        background-image:   linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/src/icons/womanimg.webp");
+    .Home-hero-text{
+        margin-left: 5px;
+        font-size: 17px;
     }
 
-    .sm-banner1{
-        margin-top: 50px;
+    .Home-hero-button{
+        margin: 15px 0 0 5px;
+        font-size: 15px;
     }
-
-    .sm-banner1 h3{
-        width: 70%;
-        font-size: 25px;
-    }
-
-    .sm-banner2{
-        margin-bottom:50px;
-    }
-
-    .sm-banner2 h3{
-        width: 70%;
-        font-size: 25px;
-    }
-} */
+} 

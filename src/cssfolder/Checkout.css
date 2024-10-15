@@ -424,15 +424,26 @@ div:nth-child(2) .envio-option {
 
 
 @media (min-width: 600px) and (max-width: 900px){
+    .Checkout{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/gymwoman2.webp");
+        background-position: center;
+        background-size: cover;
+}
+
     .Checkout-selection button{
         width: 40%;
     }   
 
     .Checkout-info{
         width: 95%;
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+        padding-top: 20px;
     }
 
     .Checkout-products{
-        width: 46%;
+        width: 65%;
+        min-height: 620px;
     }
 }
