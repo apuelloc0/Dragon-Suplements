@@ -509,6 +509,7 @@ const useGoogleSheets = (apiKey, spreadsheetId, range, filter, id) => {
                     type: row[2],
                     description: row[3],
                     price: row[4],
+                    stock: row[5].toLowerCase(), // Incluir el valor de la columna Stock
                 }));
 
                 let filteredData;

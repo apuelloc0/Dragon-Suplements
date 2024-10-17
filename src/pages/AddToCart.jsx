@@ -200,7 +200,8 @@ const AddToCart = () => {
                         <span>{producto.type}</span>
                         <p>{producto.description}</p>
                         <h4>U$S {producto.price}</h4>
-                        <button onClick={() => addItemToCart(producto)} className='AddToCart-Item'>Añadir al Carrito</button>
+                        {producto.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
+                        <button onClick={() => addItemToCart(producto)} className={`AddToCart-Item ${producto.stock === 'agotado' && 'disabled-link'}`}>Añadir al Carrito</button>
                         {/* <button onClick={realizarPedido} className='Whatsapp-Button'>Realizar Pedido</button> */}
                     </div>
                 </div>

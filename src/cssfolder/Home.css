@@ -524,6 +524,7 @@
 
     .sm-banner-container{
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../icons/inthegym.webp");
+        min-height: 450px;
     }
 
     .sm-banner1{
@@ -591,11 +592,11 @@
 
 @media (min-width: 601px) and (max-width: 900px)  {
     .slider-container{
-        width: 55%;
+        width: 60%;
     }
 
     .Home-hero-h1{
-        font-size: 50px;
+        font-size: 56px;
     }
 
     .Home-hero-text{

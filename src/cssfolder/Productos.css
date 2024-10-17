@@ -103,6 +103,19 @@
     left: 119px;
 }
 
+.shirts-container .pro .des .out-of-stock{
+    color: #fc0e25;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    background-color: #ff22363d;
+padding: 4px 5px 4px 5px;
+border-radius: 5px;
+}
+
 
 .shirts-container .pro a .shopping {
     width: 30px;
@@ -252,6 +265,11 @@
         position: absolute;
         bottom: 12px;
         left: 10px;
+    }
+
+    .shirts-container .pro .des .out-of-stock{
+        top: -13px;
+        font-size: 10px;
     }
 
     div .star {

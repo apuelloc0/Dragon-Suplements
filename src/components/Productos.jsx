@@ -277,6 +277,8 @@ const Productos = () => {
     const indexOfLastItem = (currentPage + 1) * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = productos.slice(indexOfFirstItem, indexOfLastItem);
+    console.log(currentItems)
+
 
     const totalPages = Math.ceil(productos.length / itemsPerPage);
 
@@ -303,9 +305,10 @@ const Productos = () => {
                                     <h5>{product.name}</h5>
                                     <p>{product.description}</p>
                                     <h4>${product.price}</h4>
+                                    {product.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
                                 </div>
                                 <Link className="a-contain" onClick={() => addItemToCart(product)}>
-                                    <img className="shopping" src={cart} alt="Shopping Cart" />
+                                    <img className={`shopping ${product.stock === 'agotado' && 'disabled-link'}`} src={cart} alt="Shopping Cart" />
                                 </Link>
                             </div>
                         </Link>

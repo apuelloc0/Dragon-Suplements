@@ -37,6 +37,18 @@ const ButtonCategories = () => {
                     {/* <img src={aleImage} alt="Ale" /> */}
                     <p>Suplementos</p>
                 </div>
+                <div className="category-item" onClick={() => setFilter('suplemento')}>
+                    {/* <img src={aleImage} alt="Ale" /> */}
+                    <p>Suplementos</p>
+                </div>
+                <div className="category-item" onClick={() => setFilter('suplemento')}>
+                    {/* <img src={aleImage} alt="Ale" /> */}
+                    <p>Suplementos</p>
+                </div>
+                <div className="category-item" onClick={() => setFilter('suplemento')}>
+                    {/* <img src={aleImage} alt="Ale" /> */}
+                    <p>Suplementos</p>
+                </div>
                 {/* <div className="category-item" onClick={() => setFilter('Mecatos')}>
                     <img src={redWineImage} alt="Mecatos" />
                     <p>Mecatos</p>

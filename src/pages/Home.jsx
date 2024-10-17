@@ -26,11 +26,11 @@ const Home = () => {
             <div className="sm-banner-container">
                  <div className="sm-banner1">
                      <div className="sm-banner banner-box"></div>
-                    <h3>Una buena alimentacion y mantenerse hidratado es la clave</h3>
+                    {/* <h3>Una buena alimentacion y mantenerse hidratado es la clave</h3> */}
                 </div>
 
                 <div className="sm-banner2">
-                    <h3>Y recuerda, siempre entrenar pesado y al fallo</h3>
+                    {/* <h3>Y recuerda, siempre entrenar pesado y al fallo</h3> */}
                     <div className="sm-banner banner-box2"></div>
                 </div>
             </div>
