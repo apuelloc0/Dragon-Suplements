@@ -196,11 +196,12 @@ const AddToCart = () => {
                 </div>
                 <div className="Detail-product">
                     <div className="Details">
+                    {producto.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
+
                         <h5>{producto.name}</h5>
                         <span>{producto.type}</span>
                         <p>{producto.description}</p>
                         <h4>U$S {producto.price}</h4>
-                        {producto.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
                         <button onClick={() => addItemToCart(producto)} className={`AddToCart-Item ${producto.stock === 'agotado' && 'disabled-link'}`}>Añadir al Carrito</button>
                         {/* <button onClick={realizarPedido} className='Whatsapp-Button'>Realizar Pedido</button> */}
                     </div>
