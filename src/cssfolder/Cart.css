@@ -313,8 +313,12 @@ div:nth-child(2) .envio-option {
 }
 
 @media (min-width: 600px) and (max-width: 900px){
+    .cart{
+
+    }
+
     .productsContainer{
-        min-height: 456px;
+        min-height: 600px;
     }    
 }
 
