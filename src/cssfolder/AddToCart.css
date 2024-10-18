@@ -74,13 +74,14 @@ width: 70%;
     height: 40px;
     margin-bottom: 10px;
     border: none;
-    color: black;
+    color: rgb(96, 96, 96);
     font-weight: 800;
     background-color: rgb(235, 234, 234);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: ease-in 0.4s;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .Details button.AddToCart-Item:hover {
@@ -286,6 +287,37 @@ font-size: 14px;    }
 }
 
 @media (min-width: 601px) and (max-width: 900px)  {
+    .Detail-container{
+        flex-direction: column;
+    }
+
+    .Detail-container .img-product img{
+        width: 100%;
+    }
+
+    .Detail-container .Detail-product{
+        width: 85%;
+        justify-content: center;
+    }
+
+    .Detail-product .Details{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Details h5{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .Details button{
+        width: 80%;
+    }
+
+    .Details p {
+        text-align: center;
+    }
     .Details .out-of-stock{
         width: 40%;
     }
