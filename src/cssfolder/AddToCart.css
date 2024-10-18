@@ -54,6 +54,8 @@ width: 70%;
 }
 
 .Details .out-of-stock {
+    display: flex;
+    justify-content: center;
     color: #c90b1e;
     font-size: 17px;
     font-weight: 600;
@@ -64,7 +66,7 @@ width: 70%;
     background-color: #ff22363d;
     padding: 4px 5px 4px 5px;
     border-radius: 5px;
-    width: 27%;
+    width: 30%;
 }
 
 .Details button {
@@ -83,6 +85,10 @@ width: 70%;
 .Details button.AddToCart-Item:hover {
     background-color: black;
     color: #ffff;
+}
+
+.Details button.disabled-link{
+    color: #aeaeae;
 }
 
 .Details button.Whatsapp-Button:hover {
@@ -280,6 +286,6 @@ font-size: 14px;    }
 
 @media (min-width: 601px) and (max-width: 900px)  {
     .Details .out-of-stock{
-        width: 46%;
+        width: 40%;
     }
 }
