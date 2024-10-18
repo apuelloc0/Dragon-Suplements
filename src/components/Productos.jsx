@@ -263,6 +263,7 @@ import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import "../cssfolder/Productos.css";
 import cart from "../icons/shop-cart.svg";
+import star from "../icons/staryellow.png";
 import { CartContext } from '../Context/CartContext';
 import Loading from './Loading';
 import ButtonCategories from './ButtonCategories';

@@ -36,7 +36,8 @@
     align-items: center;
     min-width: 0;
     width: 240px;
-    height: 330px;
+    /* height: 330px; */
+    height: 280px;
     padding: 10px 12px;
     border: none;
     border-radius: 25px;
@@ -79,6 +80,7 @@
     font-size: 11px;
     margin: 0 30px;
     text-align: center;
+    display: none;
 }
 
 .shirts-container .pro .des h5 {
@@ -86,6 +88,7 @@
     color: #262626;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .shirts-container .pro .des .star img {
@@ -105,7 +108,7 @@
 
 .shirts-container .pro .des .out-of-stock{
     color: #fc0e25;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     margin-top: 5px;
     position: absolute;
@@ -114,6 +117,8 @@
     background-color: #ff22363d;
 padding: 4px 5px 4px 5px;
 border-radius: 5px;
+font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -221,7 +226,8 @@ border-radius: 5px;
     .shirts-container .pro {
         min-width: 0;
         width: 170px;
-        height: 275px;
+        /* height: 275px; */
+        height: 225px;
         display: flex;
         flex-direction: column;
         padding: 0;
