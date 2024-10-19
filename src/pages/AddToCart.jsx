@@ -172,6 +172,7 @@ import React, { useContext } from 'react';
 import "../cssfolder/AddToCart.css";
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
+import Productos from '../components/Productos';
 
 const AddToCart = () => {
     const { id } = useParams();
@@ -200,6 +201,7 @@ const AddToCart = () => {
 
                         <h5>{producto.name}</h5>
                         <span>{producto.type}</span>
+                        {/* <span className='description'>descripción</span> */}
                         <p>{producto.description}</p>
                         <h4>U$S {producto.price}</h4>
                         <button onClick={() => addItemToCart(producto)} className={`AddToCart-Item ${producto.stock === 'agotado' && 'disabled-link'}`}>Añadir al Carrito</button>
@@ -207,6 +209,7 @@ const AddToCart = () => {
                     </div>
                 </div>
             </div>
+            <Productos />
         </div>
     );
 };

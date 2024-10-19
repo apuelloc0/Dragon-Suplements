@@ -441,33 +441,48 @@
         flex-direction: column;
         justify-content: center;
         /* background-attachment: fixed; */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/fitvertical.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url("/src/icons/fitvertical.webp");
         height: 90vh;
     }
 
     .slider-container {
         width: 69%;
-        margin: 0;
+        margin: 87px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .Home-hero-h1{
         color: #ffffff;
-        font-size: 42px;
+        font-size: 28px;
         line-height: 50px;
-        padding: 0px 23px 5px 0px;
+        /* padding: 0px 23px 5px 0px; */
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
     }
 
     .Home-hero-text{
-        font-size: 16px;
+        font-size: 13px;
         margin-left: 0;
+        text-align: center;
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #c3f5ff;
     }
 
     .Home-hero-button{
-        font-size: 15px;
+        font-size: 13px;
         background-color: #3b3b3bf2;
         color: #d6d6d6;
         margin-left: 0;
-        margin-top: 15px;
+        margin-top: 0;
+        /* margin-top: 15px; */
+        width: 54%;
+        text-transform: uppercase;
     }
 
     .slider-container:nth-child(2) {
@@ -593,6 +608,10 @@
 @media (min-width: 601px) and (max-width: 900px)  {
     .slider-container{
         width: 60%;
+    }
+
+    .Home-hero{
+        height: 80vh;
     }
 
     .Home-hero-h1{

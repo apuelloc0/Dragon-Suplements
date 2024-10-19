@@ -13,7 +13,7 @@ const Home = () => {
             <div class="Home-hero">
                 <div class="slider-container">
                     <h1 className="Home-hero-h1">Los mejores suplementos a tu alcance</h1>
-                    <p className="Home-hero-text">Con los mejores precios</p>
+                    <p className="Home-hero-text">Ordena ahora!</p>
                     <button className="Home-hero-button" onClick={scrollToCatalogo}>Ver Catálogo</button>
                 </div>
             </div>
