@@ -263,7 +263,7 @@ import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import "../cssfolder/Productos.css";
 import cart from "../icons/shop-cart.svg";
-import star from "../icons/staryellow.png";
+import star from "../icons/star.svg";
 import { CartContext } from '../Context/CartContext';
 import Loading from './Loading';
 import ButtonCategories from './ButtonCategories';
@@ -304,8 +304,13 @@ const Productos = () => {
                                 <img src={product.img} alt={product.name} />
                                 <div className="des">
                                     <h5>{product.name}</h5>
-                                    <p>{product.description}</p>
-                                    <h4>${product.price}</h4>
+                                    <div className="star">
+                                        <img src={star} alt="star" />
+                                        <img src={star} alt="star" />
+                                        <img src={star} alt="star" />
+                                        <img src={star} alt="star" />
+                                        <img src={star} alt="star" />
+                                    </div>                                    <h4>${product.price}</h4>
                                     {product.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
                                 </div>
                                 <Link className="a-contain" onClick={() => addItemToCart(product)}>

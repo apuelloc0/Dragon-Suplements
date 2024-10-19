@@ -37,7 +37,7 @@
     min-width: 0;
     width: 240px;
     /* height: 330px; */
-    height: 280px;
+    height: 290px;
     padding: 10px 12px;
     border: none;
     border-radius: 25px;
@@ -91,6 +91,11 @@
     text-transform: uppercase;
 }
 
+.shirts-container .pro .des .star{
+    display: flex;
+    gap: 2px;
+}
+
 .shirts-container .pro .des .star img {
     width: 13px;
     height: 13px;
@@ -100,7 +105,7 @@
     /* margin: 0; */
     font-size: 14px;
     font-weight: 500;
-    color: #ff2525;
+    color: #2f2f2f;
     position: absolute;
     bottom: 0;
     left: 119px;
@@ -108,7 +113,7 @@
 
 .shirts-container .pro .des .out-of-stock{
     color: #fc0e25;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     margin-top: 5px;
     position: absolute;
@@ -227,7 +232,7 @@ font-weight: 600;
         min-width: 0;
         width: 170px;
         /* height: 275px; */
-        height: 225px;
+        height: 230px;
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -273,13 +278,15 @@ font-weight: 600;
         left: 10px;
     }
 
+    .shirts-container .pro .des .star img{
+        margin: 0;
+        width: 10px;
+        height: 10px;
+    }
+
     .shirts-container .pro .des .out-of-stock{
         top: -13px;
         font-size: 10px;
-    }
-
-    div .star {
-        display: none;
     }
 
     .shirts-container .pro a .shopping {

@@ -42,8 +42,13 @@ width: 70%;
 }
 
 .Details h5 {
-    font-size: 32px;
+    font-size: 35px;
     text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.Details p {
+    font-size: 14px;
 }
 
 .Details span {
@@ -53,7 +58,7 @@ width: 70%;
 
 .Details h4 {
     font-weight: 600;
-    color: #ff2525;
+    color: #2f2f2f;
     margin: 10px 0 20px 0;
     /* font-family: "Ubuntu", sans-serif; */
 }
@@ -62,7 +67,8 @@ width: 70%;
     display: flex;
     justify-content: center;
     color: #c90b1e;
-    font-size: 17px;
+    font-size: 13px;
+    text-transform: uppercase;
     font-weight: 600;
     margin: 0 0 20px 0;
     /* position: absolute; */
@@ -79,9 +85,10 @@ width: 70%;
     margin-bottom: 10px;
     border: none;
     color: rgb(96, 96, 96);
-    font-weight: 800;
-    background-color: rgb(235, 234, 234);
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    border: 1px solid gainsboro;
     transition: ease-in 0.4s;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
