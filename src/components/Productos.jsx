@@ -278,7 +278,7 @@ const Productos = () => {
     const indexOfLastItem = (currentPage + 1) * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = productos.slice(indexOfFirstItem, indexOfLastItem);
-    console.log(currentItems)
+    console.log(currentItems) 
 
 
     const totalPages = Math.ceil(productos.length / itemsPerPage);
@@ -299,7 +299,7 @@ const Productos = () => {
                 {
                     loading ? <Loading /> : currentItems.length === 0 ? (<p className='no-results'>Sin resultados...</p>) :
                     currentItems.map((product, i) => 
-                        <Link key={i} to={`/${i + 1}`}>
+                        <Link key={i} to={`/${product.id}`}>
                             <div key={i} className="pro">
                                 <img src={product.img} alt={product.name} />
                                 <div className="des">

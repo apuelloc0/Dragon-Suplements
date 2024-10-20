@@ -180,31 +180,25 @@ const AddToCart = () => {
 
     const producto = productos.find(p => p.id === parseInt(id));
 
-    if (!producto) return <p>Producto no encontrado.</p>;
+    // if (!producto) return <p>Producto no encontrado.</p>;
 
-    // const realizarPedido = () => {
-    //     const mensaje = `Hola me gustaria realizar el pedido: ${producto.name} - $ ${producto.price}`;
-    //     const numeroTelefonico = "584266934611";
-    //     const enlaceWha = `https://wa.me/${numeroTelefonico}?text=${mensaje}`;
-    //     window.open(enlaceWha, "_blank");
-    // };
 
     return (
         <div className='AddToCart'>
             <div className="Detail-container">
                 <div className="img-product">
-                    <img src={producto.img} alt={producto.name} />
+                    <img src={producto?.img} alt={producto?.name} />
                 </div>
                 <div className="Detail-product">
                     <div className="Details">
-                    {producto.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
+                    {producto?.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
 
-                        <h5>{producto.name}</h5>
-                        <span>{producto.type}</span>
+                        <h5>{producto?.name}</h5>
+                        <span>{producto?.type}</span>
                         {/* <span className='description'>descripción</span> */}
-                        <p>{producto.description}</p>
-                        <h4>U$S {producto.price}</h4>
-                        <button onClick={() => addItemToCart(producto)} className={`AddToCart-Item ${producto.stock === 'agotado' && 'disabled-link'}`}>Añadir al Carrito</button>
+                        <p>{producto?.description}</p>
+                        <h4>U$S {producto?.price}</h4>
+                        <button onClick={() => addItemToCart(producto)} className={`AddToCart-Item ${producto?.stock === 'agotado' && 'disabled-link'}`}>Añadir al Carrito</button>
                         {/* <button onClick={realizarPedido} className='Whatsapp-Button'>Realizar Pedido</button> */}
                     </div>
                 </div>
