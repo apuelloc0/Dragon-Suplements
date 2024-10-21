@@ -10,6 +10,7 @@ import Checkout from './components/Checkout';
 import Loader from './components/Loading';
 import { useState, useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
+import NotFound from './components/NotFound';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/:id" element={<AddToCart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<NotFound />} /> 
           </Routes>
           <Footer />
         </HashRouter>

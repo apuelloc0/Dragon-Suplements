@@ -185,6 +185,8 @@ const AddToCart = () => {
 
     return (
         <div className='AddToCart'>
+            {!producto? <div className='No-results'><p>Sin resultados...</p></div> 
+            :
             <div className="Detail-container">
                 <div className="img-product">
                     <img src={producto?.img} alt={producto?.name} />
@@ -202,7 +204,7 @@ const AddToCart = () => {
                         {/* <button onClick={realizarPedido} className='Whatsapp-Button'>Realizar Pedido</button> */}
                     </div>
                 </div>
-            </div>
+            </div>  }
             <Productos />
         </div>
     );

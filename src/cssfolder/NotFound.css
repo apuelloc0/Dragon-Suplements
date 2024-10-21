@@ -1,0 +1,67 @@
+.not-found-container {
+    text-align: center;
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fbfbfb;
+  }
+  
+  .not-found-title {
+    font-size: 35px;
+    color: #6f5959;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .not-found-message {
+    font-size: large;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .not-found-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    transition: ease-in 0.3s;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+  }
+
+  .not-found-link:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  @media (max-width: 600px){
+    .not-found-title {
+        font-size: 30px;
+        color: #6f5959;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .not-found-message {
+        font-size: 17px;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .not-found-link{
+        font-size: 11px;
+    }
+  }
+  
