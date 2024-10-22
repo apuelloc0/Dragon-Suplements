@@ -168,6 +168,7 @@
 
 
 // ADDTOCART MODIFICADO SIN LLAMAR A LA API GOOGLE SHEETS
+// Componente de pagina que muestra los detalles de Productos
 import React, { useContext } from 'react';
 import "../cssfolder/AddToCart.css";
 import { useParams } from 'react-router-dom';
@@ -189,17 +190,23 @@ const AddToCart = () => {
             :
             <div className="Detail-container">
                 <div className="img-product">
+                    {/* Imagen de Producto */}
                     <img src={producto?.img} alt={producto?.name} />
                 </div>
                 <div className="Detail-product">
                     <div className="Details">
+                    {/* En caso de que el producto este agostado */}
                     {producto?.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
 
+                        {/* Nombre del Producto */}
                         <h5>{producto?.name}</h5>
+                        {/* Categoria del Producto */}
                         <span>{producto?.type}</span>
-                        {/* <span className='description'>descripción</span> */}
+                        {/* Descripcion del Producto */}
                         <p>{producto?.description}</p>
+                        {/* Precio del Producto */}
                         <h4>U$S {producto?.price}</h4>
+                        {/* Boton de Añadir al Carrito */}
                         <button onClick={() => addItemToCart(producto)} className={`AddToCart-Item ${producto?.stock === 'agotado' && 'disabled-link'}`}>Añadir al Carrito</button>
                         {/* <button onClick={realizarPedido} className='Whatsapp-Button'>Realizar Pedido</button> */}
                     </div>

@@ -33,12 +33,15 @@ const Header = () => {
     return (
         <header className={`Header ${shrink ? 'shrink' : ''}`}>
             <div className='LogoContainer'>
+                {/* elemento para modificar el logo */}
                 <Link to={"/"}><img src={logo} alt="Logo" className='Logo' /></Link>
             </div>
 
             <div className='buttonCartContainer'>
+                {/* boton para Ir a Whatsapp */}
                 <button className='cta-button'>
                     <p className='cta-button-p'>Contáctanos</p>
+                    {/* Link de Whatsapp del negocio */}
                     <Link to="https://wa.link/2l4mff" ><img src={whatsappIcon} alt="WhatsApp Logo" className='whatsapp-logo' /></Link>
                 </button>
                 {/* <div className='buttonCart buttonCart-left'>
@@ -48,6 +51,7 @@ const Header = () => {
                     <Cart cartOpen={cartOpen} setCartOpen={setCartOpen} />
                 </div> */}
                 <div className='buttonCart'>
+                    {/* Icono de Bolso que representa el carrito de compras */}
                     <img onClick={() => setCartOpen(!cartOpen)} src={cartIcon} alt="cart Icon" />
                     {cartItems.length !== 0 && (
                         <div className='productsNumber'>{cartItems.length}</div>

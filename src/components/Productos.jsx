@@ -295,14 +295,18 @@ const Productos = () => {
             <ButtonCategories />
             <SearchBar />
 
+            {/* Este es el elementos que contiene la lista de Productos */}
             <div ref={containerRef} className="Pro-Container">
                 {
                     loading ? <Loading /> : currentItems.length === 0 ? (<p className='no-results'>Sin resultados...</p>) :
+                    // Se encarga de pintar cada uno de los productos que provienen de la Hoja de Calculo de Google Sheets
                     currentItems.map((product, i) => 
                         <Link key={i} to={`/${product.id}`}>
                             <div key={i} className="pro">
+                                {/* Imagen del Producto */}
                                 <img src={product.img} alt={product.name} />
                                 <div className="des">
+                                    {/* Nombre del Producto */}
                                     <h5>{product.name}</h5>
                                     <div className="star">
                                         <img src={star} alt="star" />
@@ -310,9 +314,13 @@ const Productos = () => {
                                         <img src={star} alt="star" />
                                         <img src={star} alt="star" />
                                         <img src={star} alt="star" />
-                                    </div>                                    <h4>${product.price}</h4>
+                                    </div>           
+                                    {/* Precio del Producto */}                        
+                                     <h4>${product.price}</h4>
+                                     {/* En caso de estar agotado */}
                                     {product.stock === 'agotado' && <span className="out-of-stock">Agotado</span>}
                                 </div>
+                                {/* Icono de carrito para agregar productos */}
                                 <Link className="a-contain" onClick={() => addItemToCart(product)}>
                                     <img className={`shopping ${product.stock === 'agotado' && 'disabled-link'}`} src={cart} alt="Shopping Cart" />
                                 </Link>
@@ -322,6 +330,7 @@ const Productos = () => {
                 }
             </div>
 
+                {/* Este elemento tiene como funcion ir a la siguiente lista de Productos */}
             <ReactPaginate
                 previousLabel={'<'}
                 nextLabel={'>'}

@@ -1,3 +1,4 @@
+// Representa la pagina principal
 import "../cssfolder/Home.css";
 import Productos from "../components/Productos";
 
@@ -12,17 +13,17 @@ const Home = () => {
 
             <div class="Home-hero">
                 <div class="slider-container">
-                    <h1 className="Home-hero-h1">Los mejores suplementos a tu alcance</h1>
+                    {/* Contiene los textos Principal, secundario y Boton de Ir a Catalogo */}
+                    <h1 className="Home-hero-h1">Consigue tus suplementos con nosotros</h1>
                     <p className="Home-hero-text">Ordena ahora!</p>
                     <button className="Home-hero-button" onClick={scrollToCatalogo}>Ver Catálogo</button>
                 </div>
             </div>
 
+            {/* El Componente Productos que contiene Botones de categorias, El buscador(Search) y la lista de productos(Catalogo) */}
             <Productos />
 
-            {/* <div className="Home banner section-m1">
-            </div> */}
-
+            {/* Elemento para agregar imagenes */}
             <div className="sm-banner-container">
                  <div className="sm-banner1">
                      <div className="sm-banner banner-box"></div>

@@ -1,3 +1,4 @@
+// Componente que representa el Formulario 
 import React, { useContext, useState } from 'react';
 import '../cssfolder/Formulario.css'; // Asegúrate de importar el CSS
 import { CartContext } from '../Context/CartContext';

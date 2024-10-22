@@ -1,10 +1,10 @@
+// Componente de Pagina que contiene detalles de pedido y formulario
 import React, { useContext, useState } from 'react';
 import "../cssfolder/Checkout.css";
 import { CartContext } from '../Context/CartContext';
 import flechaiz from "../icons/flechaiz.svg";
 import Formulario from './Formulario';
-// import PSEPayment from './PSEPayment';
-// import gymwoman from '../icons/gymwoman.webp';
+
 
 const Checkout = () => {
     const { cartItems } = useContext(CartContext);
@@ -24,30 +24,14 @@ const Checkout = () => {
         return subtotal;
     };
 
-    // const handleBackClick = () => {
-    //     setSelectedOption(null);
-    // };
-
     return (
         <div className="Checkout">
 
-             {/* {!selectedOption && (
-                 <div className="Checkout-selection">
-                     <button onClick={() => setSelectedOption('pse')}>Métodos de Pago</button>
-                     <button onClick={() => setSelectedOption('whatsapp')}>Finalizar Pedido</button>
-                 </div>
-             )} */}
-
-            
-
-                <div className="Checkout-info">
-                    {/* <button className="back-button" onClick={handleBackClick}>
-                        <img src={flechaiz} alt="" />
-                    </button> */}
-
+                <div className="Checkout-info">        
+                    {/* Componente de formulario */}
                     <Formulario />
-                    {/* {selectedOption === 'pse' && <PSEPayment total={calculateTotal} />} */}
 
+                    {/* Representa los detalles del Pedido */}
                     <div className="Checkout-products">
                         <div className="Checkout-list">
                             <div className='Checkout-title'>

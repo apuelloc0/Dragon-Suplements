@@ -1,3 +1,4 @@
+// Representa el Buscador(Search) 
 import React, { useState } from 'react';
 import lupa from '../icons/lupaicon.svg';
 import "../cssfolder/SearchBar.css";
@@ -18,6 +19,7 @@ const SearchBar = () => {
 
     return (
         <div className="search-bar">
+            {/* Este elemento es el Buscador */}
             <input
                 className="search-input"
                 type="text"
