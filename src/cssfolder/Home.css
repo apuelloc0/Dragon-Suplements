@@ -538,7 +538,7 @@
     }
 
     .sm-banner-container{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../icons/inthegym.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url("/src/icons/bannertablet.webp");
         min-height: 450px;
     }
 
@@ -608,23 +608,47 @@
 @media (min-width: 601px) and (max-width: 900px)  {
     .slider-container{
         width: 60%;
-    }
+        margin: 87px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    }
 
     .Home-hero{
-        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        /* background-attachment: fixed; */
+        background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url("/src/icons/fitvertical.webp");
+        height: 95vh;
     }
 
     .Home-hero-h1{
-        font-size: 70px;
-    }
+        color: #ffffff;
+        font-size: 50px;
+        line-height: 68px;
+        /* padding: 0px 23px 5px 0px; */
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;    }
 
     .Home-hero-text{
-        margin-left: 5px;
         font-size: 17px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #c3f5ff;
     }
 
     .Home-hero-button{
-        margin: 15px 0 0 5px;
-        font-size: 15px;
+        font-size: 13px;
+        background-color: #3b3b3bf2;
+        color: #d6d6d6;
+        margin-left: 0;
+        margin-top: 0;
+        /* margin-top: 15px; */
+        width: 35%;
+        text-transform: uppercase;
     }
 } 
