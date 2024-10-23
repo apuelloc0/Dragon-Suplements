@@ -24,10 +24,11 @@
     align-items: center;
     padding: 30px 0 60px 0;
     min-height: 450px;
+    gap: 30px;
 }
 
 .Detail-container .img-product {
-    width: 55%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -35,10 +36,21 @@
 }
 
 .Detail-container .img-product img {
-    width: 60%;
+    width: 100%;
     /* height: 80%; */
     border-radius: 20px;
 }
+
+.img-product {
+    position: relative;
+    z-index: 1;
+}
+
+.Detail-product {
+    position: relative;
+    z-index: 0;
+}
+
 
 .Detail-container .Detail-product {
     width: 40%;
@@ -52,7 +64,7 @@
 .Detail-product .Details {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 100%;
     background-color: #eaf5ff;
     padding: 30px 23px;
     border-radius: 10px;
@@ -61,15 +73,18 @@
 }
 
 .Details h5 {
-    font-size: 35px;
+    font-size: 60px;
     text-transform: uppercase;
     margin: 20px 0 10px 0;
     text-align: center;
+    color: #8cafaf;
+
 }
 
 .Details p {
     font-size: 14px;
     text-align: center;
+    padding: 0 10px;
 }
 
 .Details span {
@@ -110,13 +125,14 @@
     font-weight: 600;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    border: 1px solid gainsboro;
+    border: 1px solid rgb(255, 255, 255);
     transition: ease-in 0.3s;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     width: 70%;
     font-size: 12px;
+    outline: none;
 }
 
 .Details button.AddToCart-Item:hover {
@@ -133,80 +149,6 @@
     color: #ffff;
 }
 
-
-
-
-
-
-/* .AddToCart table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
-}
-
-.AddToCart table .tshirt {
-    width: 70px;
-    border-radius: 10px;
-}
-
-.AddToCart table td:nth-child(1) {
-    width: 100px;
-    text-align: center;
-}
-
-.AddToCart table td:nth-child(2) {
-    width: 150px;
-    text-align: center;
-}
-
-.AddToCart table td:nth-child(3) {
-    width: 250px;
-    text-align: center;
-}
-
-.AddToCart table td:nth-child(4),
-.AddToCart table td:nth-child(5) .AddToCart table td:nth-child(6) {
-    width: 150px;
-    text-align: center;
-}
-
-.AddToCart table td:nth-child(5) {
-    display: grid;
-    place-content: center;
-} */
-
-/* .AddToCart table td:nth-child(6) {
-    text-align: center;
-}
-
-.AddToCart table td:nth-child(5) input {
-    width: 70px;
-    padding: 10px 5px 10px 15px;
-    margin: 0;
-    border: 1px solid gray;
-}
-
-.AddToCart table thead {
-    border: 1px solid #e2e9e1;
-    border-left: none;
-    border-right: none;
-}
-
-.AddToCart table thead td {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 18px 0;
-}
-
-.AddToCart table tbody tr td {
-    padding: 15px;
-}
-
-.AddToCart table tbody td {
-    font-size: 15px;
-} */
 
 .AddToCart-add {
     display: flex;
@@ -270,11 +212,15 @@
         margin-top: 90px;
         padding-top: 50px;
         flex-direction: column;
+        gap: 0;
+    }
+
+    .Detail-container .img-product{
+        width: 100%;
     }
 
     .Detail-container .img-product img {
-        width: 296px;
-        height: 296px;
+        width: 100%;
     }
 
     .Detail-container .Detail-product {
@@ -335,6 +281,10 @@ font-size: 14px;    }
         flex-direction: column;
     }
 
+    .Detail-container .img-product{
+        width: 75%;
+    }
+
     .Detail-container .img-product img{
         width: 100%;
     }
@@ -345,7 +295,7 @@ font-size: 14px;    }
     }
 
     .Detail-product .Details{
-        width: 60%;
+        width: 70%;
         justify-content: center;
         align-items: center;
         padding: 55px 23px;
@@ -354,6 +304,7 @@ font-size: 14px;    }
     .Details h5{
         margin: 20px 0;
         text-align: center;
+        font-size: 47px;
     }
 
     .Details button{

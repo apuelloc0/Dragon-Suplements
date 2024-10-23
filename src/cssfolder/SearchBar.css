@@ -42,4 +42,8 @@ button .lupa-icon{
         width: 80%;
         margin-top: 10px;
     }
+
+    .search-bar .search-input{
+        font-size: 13px;
+    }
 }

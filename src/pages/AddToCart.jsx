@@ -181,7 +181,6 @@ const AddToCart = () => {
 
     const producto = productos.find(p => p.id === parseInt(id));
 
-    // if (!producto) return <p>Producto no encontrado.</p>;
 
 
     return (
