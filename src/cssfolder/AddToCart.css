@@ -282,7 +282,7 @@ font-size: 14px;    }
     }
 
     .Detail-container .img-product{
-        width: 75%;
+        width: 100%;
     }
 
     .Detail-container .img-product img{
@@ -295,7 +295,7 @@ font-size: 14px;    }
     }
 
     .Detail-product .Details{
-        width: 70%;
+        width: 88%;
         justify-content: center;
         align-items: center;
         padding: 55px 23px;
@@ -308,7 +308,7 @@ font-size: 14px;    }
     }
 
     .Details button{
-        width: 80%;
+        width: 60%;
     }
 
     .Details p {
