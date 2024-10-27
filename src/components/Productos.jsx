@@ -272,7 +272,7 @@ import SearchBar from './SearchBar';
 const Productos = () => {
     const { addItemToCart, productos, loading, error } = useContext(CartContext);
     const [currentPage, setCurrentPage] = useState(0);
-    const [itemsPerPage] = useState(30); // Fijamos la cantidad de items por página
+    const [itemsPerPage] = useState(28); // Fijamos la cantidad de items por página
     const containerRef = useRef(null);
 
     const indexOfLastItem = (currentPage + 1) * itemsPerPage;

@@ -1,12 +1,28 @@
 // Representa la pagina principal
 import "../cssfolder/Home.css";
 import Productos from "../components/Productos";
+// import { useEffect } from "react";
 
 const Home = () => {
 
     const scrollToCatalogo = () => {
         document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
       };
+
+    //   const texts = [
+    //     "CONSIGUE TUS SUPLEMENTOS CON NOSOTROS",
+    //     "AlCANZA TU MAXIMO RENDIMIENTO",
+    //     "QUE ESPERAS PARA REALIZAR TU"
+    //   ];
+    //   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+    
+    //   useEffect(() => {
+    //     const interval = setInterval(() => {
+    //       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    //     }, 4000); // Cambia cada 4 segundos
+    
+    //     return () => clearInterval(interval);
+    //   }, [texts.length]);
 
     return (
         <div className='Home'>
@@ -25,15 +41,14 @@ const Home = () => {
 
             {/* Elemento para agregar imagenes */}
             <div className="sm-banner-container">
-                 <div className="sm-banner1">
+                <img src="" alt="" />
+                 {/* <div className="sm-banner1">
                      <div className="sm-banner banner-box"></div>
-                    {/* <h3>Una buena alimentacion y mantenerse hidratado es la clave</h3> */}
                 </div>
 
                 <div className="sm-banner2">
-                    {/* <h3>Y recuerda, siempre entrenar pesado y al fallo</h3> */}
                     <div className="sm-banner banner-box2"></div>
-                </div>
+                </div> */}
             </div>
 
         </div>
