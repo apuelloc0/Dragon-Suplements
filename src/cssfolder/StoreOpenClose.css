@@ -42,6 +42,7 @@
 img.reloj-icon {
     width: 16%;
     padding: 5px;
+    background-color: transparent;
 }
 
 @media (max-width: 600px) {

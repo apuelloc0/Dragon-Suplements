@@ -1,7 +1,7 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
 import Home from './pages/Home';
+import Welcome from './pages/Welcome';
 import AddToCart from './pages/AddToCart';
 import CartProvider from './Context/CartContext';
 // import StoreOpenClose from './components/StoreOpenClose';
@@ -28,10 +28,10 @@ function App() {
       ) : (
         <HashRouter>
         <ScrollToTop />
-          <Header />
           {/* <StoreOpenClose /> */}
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Welcome />} />            
+            <Route path="/home" element={<Home />} />
             <Route path="/:id" element={<AddToCart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<NotFound />} /> 

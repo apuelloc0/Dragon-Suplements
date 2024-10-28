@@ -173,6 +173,7 @@ import React, { useContext } from 'react';
 import "../cssfolder/AddToCart.css";
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
+import Header from '../components/Header';
 import Productos from '../components/Productos';
 
 const AddToCart = () => {
@@ -185,6 +186,8 @@ const AddToCart = () => {
 
     return (
         <div className='AddToCart'>
+            <Header />
+
             {!producto? <div className='No-results'><p>Sin resultados...</p></div> 
             :
             <div className="Detail-container">

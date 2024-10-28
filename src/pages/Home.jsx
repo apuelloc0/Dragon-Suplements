@@ -1,7 +1,8 @@
 // Representa la pagina principal
 import "../cssfolder/Home.css";
 import Productos from "../components/Productos";
-// import { useEffect } from "react";
+import Header from '../components/Header';
+
 
 const Home = () => {
 
@@ -26,6 +27,8 @@ const Home = () => {
 
     return (
         <div className='Home'>
+           <Header />
+
 
             <div class="Home-hero">
                 <div class="slider-container">
