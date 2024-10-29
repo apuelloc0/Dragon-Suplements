@@ -303,7 +303,7 @@ div:nth-child(2) .envio-option {
     }
 
     .Ordering .p-enviar {
-        margin: 0 14px 0 14px;
+        margin: 0 14px 10px 14px;
         font-size: 10px;
         color: #9f9f9f;
         text-align: center;
