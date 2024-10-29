@@ -36,8 +36,8 @@
     border-radius: 10px;}
 
 .schedule-logo img.admin{
-    width: 34px;
-    height: 31px;}
+    width: 27px;
+    height: 27px;}
 
 .Welcome-info{
     width: 90%;
@@ -107,7 +107,15 @@ gap: 10px;
     border-radius: 7px;
     color: #ffffff;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     transition: ease 0.5s;
+}
+
+.Welcome-buttons button img{
+    width: 20px;
 }
 
 .Welcome-buttons button a{
@@ -129,13 +137,13 @@ gap: 10px;
     }
 
     .Welcome-banner{
-        height: 126px;
+        height: 140px;
     }
 
     .schedule-logo{
         width: 85%;
         position: absolute;
-    top: 30px;
+    top: 35px;
     align-items: center;
     }
 
@@ -154,7 +162,7 @@ gap: 10px;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 40px;
     }
 
     .Welcome-coordinates{

@@ -141,7 +141,7 @@ body.modal-open {
 .Ordering button a {
     color: #414141;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .Ordering button a:hover {

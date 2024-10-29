@@ -157,7 +157,7 @@
 .sm-banner-container{
     display: flex;
     flex-direction: column;
-    /* background-image: url("../icons/bannerfit.webp"); */
+    height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/womanimg.webp");
     background-size: cover;
     background-position: center;
@@ -466,7 +466,7 @@
     }
 
     .sm-banner-container{
-        background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url("/src/icons/bannertablet.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/src/icons/bannertablet.webp");
         min-height: 450px;
     }
 
@@ -579,5 +579,9 @@
         /* margin-top: 15px; */
         width: 40%;
         text-transform: uppercase;
+    }
+
+    .sm-banner-container{
+        height: 40vh;
     }
 } 

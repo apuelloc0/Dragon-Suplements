@@ -292,7 +292,7 @@ div:nth-child(2) .envio-option {
 @media (max-width: 600px) {
     .Checkout {
         width: 100%;
-        margin-top: 90px;
+        /* margin-top: 90px; */
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../icons/gymwoman2.webp");
         padding: 0;
         background-position: center;
@@ -365,6 +365,7 @@ div:nth-child(2) .envio-option {
 
     .Checkout-items-left p{
         color: #ffffff;
+        font-size: 11px;
     }
 
     .Checkout-total {

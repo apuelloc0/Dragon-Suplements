@@ -7,6 +7,7 @@ import tienda from "../icons/tienda.svg";
 import delivery from "../icons/delivery.svg";
 import avion from "../icons/avion.svg";
 import pesas from "../icons/pesasbanner.webp";
+import whatsappIcon from "../icons/WhatsApp.png.webp"; // Asegúrate de importar el icono de WhatsApp
 import { Link } from 'react-router-dom';
 
 
@@ -38,7 +39,7 @@ const Welcome = () => {
                 <p className='location'>📍 C. 14 Sur, Bucaramanga, Santander, Colombia</p>
             </div>
             <div className="Welcome-buttons">
-                <button className='Welcome-buttons-1'>WhatsApp</button>
+                <button className='Welcome-buttons-1'>WhatsApp <img src={whatsappIcon} alt="" /> </button>
                 <button className='Welcome-buttons-2'><Link to={'/home'}>Catálogo</Link></button>
             </div>
         </div>
