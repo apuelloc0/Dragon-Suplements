@@ -83,6 +83,7 @@ const Formulario = () => {
                     >
                         <option value="Retiro en local">Retiro en local</option>
                         <option value="Domicilio">Domicilio</option>
+                        <option value="Envio">Envíos Nacionales</option>
                     </select>
                 </div>
                 <div className="form-group">
@@ -99,8 +100,9 @@ const Formulario = () => {
                     </select>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="ubicacion">Dirección(en caso de elegir Domicilio):</label>
+                    <label disab htmlFor="ubicacion">Dirección(en caso de elegir Domicilio):</label>
                     <input
+                        disabled={entrega !== 'Domicilio' && entrega !== 'Envio'} // Deshabilitar si entrega no es Domicilio o Envio
                         type="text"
                         id="ubicacion"
                         value={ubicacion}

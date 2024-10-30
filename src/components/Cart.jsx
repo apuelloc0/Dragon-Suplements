@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom';
 const Cart = ({ cartOpen, setCartOpen }) => {
 
     const { cartItems } = useContext(CartContext);
-    const total = cartItems.reduce((previous, current) => previous + current.amount * current.price, 0);
-
+    const total = cartItems.reduce((accumulator, item) => {
+        return accumulator + (item.amount * item.price);
+    }, 0).toFixed(2);
+    
     const [selectedOption, setSelectedOption] = useState(null);
     const [shippingMethod, setShippingMethod] = useState('local');
     const shippingCost = 3;

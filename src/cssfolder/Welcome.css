@@ -225,6 +225,11 @@ gap: 10px;
 }
 
 @media (min-width: 601px) and (max-width: 900px){
+
+    .Welcome{
+        height: 100%;
+    }
+
     .Welcome-info{
         width: 90%;
         flex-direction: column;

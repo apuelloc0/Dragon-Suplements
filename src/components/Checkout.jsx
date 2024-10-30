@@ -4,14 +4,18 @@ import "../cssfolder/Checkout.css";
 import { CartContext } from '../Context/CartContext';
 import flechaiz from "../icons/flechaiz.svg";
 import Formulario from './Formulario';
+import { Link } from 'react-router-dom';
 
 
 const Checkout = () => {
     const { cartItems } = useContext(CartContext);
-    const subtotal = cartItems.reduce((previous, current) => previous + current.amount * current.price, 0);
+    const subtotal = cartItems.reduce((accumulator, item) => {
+        return accumulator + (item.amount * item.price);
+    }, 0).toFixed(2);
+    // const subtotal = cartItems.reduce((previous, current) => previous + current.amount * current.price, 0);
     const [selectedOption, setSelectedOption] = useState(null);
     const [shippingMethod, setShippingMethod] = useState('local');
-    const shippingCost = 3;
+    const shippingCost = 3.11;
 
     const handleShippingChange = (method) => {
         setShippingMethod(method);
@@ -19,13 +23,17 @@ const Checkout = () => {
 
     const calculateTotal = () => {
         if (shippingMethod === 'domicilio') {
-            return subtotal + shippingCost;
+            return parseFloat(subtotal) + parseFloat(shippingCost);
         }
         return subtotal;
     };
 
     return (
         <div className="Checkout">
+
+                <Link to={"/home"}><img src={flechaiz} alt="" className="back-button" />
+                </Link>
+
 
                 <div className="Checkout-info">        
                     {/* Componente de formulario */}
@@ -87,7 +95,7 @@ const Checkout = () => {
                                             checked={shippingMethod === 'domicilio'}
                                             onChange={() => handleShippingChange('domicilio')}
                                         />
-                                        <label htmlFor="domicilio">Domicilio <span>$3</span></label>
+                                        <label htmlFor="domicilio">Domicilio <span>$3.11</span></label>
                                     </div>
                                 </div>
                             </div>
